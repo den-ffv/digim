@@ -1,0 +1,58 @@
+@import "../../variables.scss";
+.menu{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  padding: 50px 50px 20px 50px;
+  z-index: 5;
+  box-shadow: 0 0 15px #00000040;
+  transition: 1s;
+  transform: translateY(-110%);
+  text-align: center;
+  &__list{
+    margin: 10px 0px 10px 0px;
+  }
+}
+
+.menu-active{
+  transition: 1s;
+  transform: translateY(0%);
+}
+
+.menu__footer{
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 4;
+  box-shadow: 0 0 15px #00000040;
+  transition: 1.5s;
+  transform: translateY(-110%);
+  p{
+    text-align: center;
+    padding: 70px 0px 20px 0px;
+    font-size: 90px;
+  }
+}
+.menu__footer-active{
+  transition: 0.8s;
+  transform: translateY(108%);
+}
+
+
+// =========
+.menu-btn {
+  font-size: 20px;
+  background-color: transparent;
+  border: 1px solid $color-base;
+  border-radius: 16px;
+  padding: 10px 25px;
+  transition: $transition-s;
+  &:hover {
+    background: $color-hover;
+    transition: $transition-s;
+  }
+}

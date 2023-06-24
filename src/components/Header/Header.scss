@@ -1,0 +1,104 @@
+@import "../../variables.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 48px 0px 24px 0px;
+  position: relative;
+  &__logo {
+  }
+
+  // .header__nav
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  // .header__list
+
+  &__list {
+    margin: 0px 10px 0px 0px;
+    &:last-child {
+      margin: 0px;
+    }
+    a {
+      padding: 15px;
+      transition: $transition-s;
+      &:hover {
+        transition: $transition-s;
+        color: $color-hover;
+      }
+    }
+  }
+
+  // .header__button
+
+  &__button {
+    font-size: 20px;
+    background-color: transparent;
+    border: 1px solid $color-base;
+    border-radius: 16px;
+    padding: 20px 35px;
+    transition: $transition-s;
+    &:hover {
+      background: $color-hover;
+      transition: $transition-s;
+    }
+  }
+}
+@media (max-width: 970px) {
+  .header{
+    padding: 28px 0px 15px 0px;
+    &__nav {
+      display: none;
+      align-items: center;
+    }
+    &__button {
+      display: none;
+    }
+  }
+}
+
+
+
+
+
+// ===========menu button===========
+.menu-button {
+  display: none;
+  padding: 5px 0px 0px 0px;
+  position: absolute;
+  right: 0;
+  z-index: 10;
+  width: 35px;
+  span {
+    display: block;
+    margin: 5px 0px;
+    border-radius: 5px;
+    width: 100%;
+    height: 3px;
+    background: $color-base;
+    transition: $transition-s;
+  }
+}
+.menu-button-active {
+  span {
+    transition: $transition-s;
+    transform: rotate(-45deg);
+    margin: -5px 0px 0px 0px;
+    &:nth-child(2) {
+      opacity: 0;
+    }
+    &:last-child {
+      margin: 0px 0px 5px 0px;
+      transform: rotate(45deg);
+    }
+  }
+}
+@media (max-width: 970px) {
+  .menu-button {
+    display: block;
+  }
+}
