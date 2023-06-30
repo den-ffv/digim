@@ -1,3 +1,5 @@
+@import "../variables.scss";
+
 .section-info {
   margin: 72px 0px 0px 0px;
   display: flex;
@@ -21,7 +23,42 @@
   &__img {
   }
 }
-@media(max-width: 1460px){
+
+.sponsors {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 70px 0px 40px 0px;
+  img {
+    padding: 20px 10px;
+    transition: $transition-s;
+    filter: brightness(0);
+    &:hover {
+      transition: $transition-s;
+      filter: brightness(1);
+    }
+  }
+}
+.section-servis {
+
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+
+  }
+}
+@media (max-width: 1280px) {
+  .section-servis__cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+// --------------------------
+@media (max-width: 1460px) {
   .section-info {
     margin: 72px 0px 0px 0px;
     display: flex;
@@ -32,31 +69,30 @@
       max-width: 600px;
       margin: 0px 0px 0px 0px;
     }
-  
+
     &__title {
       font-size: 50px;
     }
-  
+
     &__text {
       margin: 30px 0px 20px 0px;
       font-size: 16px;
     }
-  
+
     &__img {
       margin: 30px 0px 0px 0px;
       max-width: 400px;
     }
   }
 }
-@media(max-width: 1030px){
+@media (max-width: 1030px) {
   .section-info {
     &__content {
       text-align: center;
-
     }
   }
 }
-@media(max-width: 530px){
+@media (max-width: 530px) {
   .section-info {
     margin: 72px 0px 0px 0px;
     display: flex;
@@ -69,16 +105,16 @@
       max-width: 600px;
       margin: 0px 0px 0px 0px;
     }
-  
+
     &__title {
       font-size: 25px;
     }
-  
+
     &__text {
       margin: 30px 0px 20px 0px;
       font-size: 14px;
     }
-  
+
     &__img {
       max-width: 300px;
     }

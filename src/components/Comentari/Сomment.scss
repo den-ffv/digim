@@ -1,0 +1,74 @@
+@import "../../variables.scss";
+
+.comment {
+  color: #fff;
+  margin: 20px 20px;
+  width: 100%;
+  &__text {
+    position: relative;
+    min-width: 600px;
+    max-width: 600px;
+    border: 1px solid $color-one;
+    border-radius: 20px;
+    padding: 48px 52px;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -21px;
+      left: 60px;
+      width: 40px;
+      height: 40px;
+      border-left: 1px solid $color-one;
+      border-bottom: 1px solid $color-one;
+      background: $color-bg-btn;
+      transform: rotate(-45deg);
+    }
+  }
+  &__content-author {
+    margin: 48px 0px 0px 80px;
+  }
+  &__author {
+    font-size: 20px;
+    color: $color-one;
+    font-weight: 500;
+  }
+
+  &__teg {
+  }
+}
+@media(max-width: 800px){
+.comment {
+  color: #fff;
+  margin: 10px 20px;
+  width: 100%;
+  font-size: 13px;
+  &__text {
+    min-width: 250px;
+    max-width: 250px;
+    padding: 20px 20px 25px 20px;
+    font-size: 13px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -21px;
+      left: 60px;
+      width: 40px;
+      height: 40px;
+      border-left: 1px solid $color-one;
+      border-bottom: 1px solid $color-one;
+      background: $color-bg-btn;
+      transform: rotate(-45deg);
+    }
+  }
+  &__content-author {
+    margin: 35px 0px 0px 80px;
+  }
+  &__author {
+    font-size: 16px;
+    color: $color-one;
+    font-weight: 500;
+  }
+
+}
+}

@@ -1,0 +1,75 @@
+@import "../../variables.scss";
+
+.card {
+  display: flex;
+  max-width: 775px;
+  padding: 50px;
+  justify-content: space-between;
+  border-radius: 45px;
+  border: 1px solid #191a23;
+  background: #f3f3f3;
+  box-shadow: 0px 5px 0px 0px #191a23;
+  margin: 0px 50px 60px 0px;
+  transition: $transition-s;
+  &:hover {
+    transform: translateY(5px);
+    transition: $transition-s;
+    box-shadow: 0px 0px 0px 0px #191a23;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    img {
+      margin: 0px 15px 0px 0px;
+      width: 40px;
+    }
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+  }
+  &__title {
+    p {
+      font-size: 30px;
+      font-weight: 500;
+      display: table;
+      padding: 2px 7px;
+      border-radius: 7px;
+      background: #c797ff;
+    }
+  }
+}
+@media (max-width: 650px) {
+  .card {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    margin: 0px 0px 30px 0px;
+    padding: 30px;
+    &__img {
+      margin: 0px 0px 30px 0px;
+      max-width: 220px;
+    }
+    &__content {
+      justify-content: center;
+      img {
+        margin: 0px 15px 0px 0px;
+        width: 40px;
+      }
+    }
+    &__link {
+      display: flex;
+      align-items: center;
+      margin: 20px 0px 0px 0px;
+    }
+    &__title {
+      p {
+        font-size: 24px;
+        font-weight: 500;
+        display: table;
+        padding: 2px 7px;
+      }
+    }
+  }
+}

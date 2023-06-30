@@ -4,13 +4,20 @@ import Header from "./components/Header/Header";
 import Home from "./pages/Home";
 
 function App() {
+  const menuItems = [
+    { value: "About us", href: "/" },
+    { value: "Services", href: "/" },
+    { value: "Use Cases", href: "/" },
+    { value: "Pricing", href: "/" },
+    { value: "Blog", href: "/" },
+  ];
   return (
     <div className='wrapper'>
-      <Header />
+      <Header  menuItems={menuItems}/>
       <main className="main">
         <Home />
       </main>
-      <Footer/>
+      <Footer menuItems={menuItems}/>
     </div>
   );
 }

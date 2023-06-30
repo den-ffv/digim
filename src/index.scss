@@ -2,6 +2,10 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  &::selection {
+    background: #c897ff6c;
+    }
+  // cursor: url("../public/cursor.svg")2 2, pointer;
 }
 
 li{
@@ -24,10 +28,13 @@ html, body{
   max-width: 1630px;
   padding: 0px 15px 0px 15px;
   margin: 0px auto;
-  min-height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 .main{
-  flex: 1 1 auto;
+  flex: 1 ;
+}
+footer{
+  margin-top: auto;
 }

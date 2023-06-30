@@ -2,16 +2,9 @@ import { useState } from "react";
 import logo from "../../assets/DIGIM-logo.svg";
 import "./Header.scss";
 import Menu from "../Menu/Menu";
-function Header() {
+function Header({menuItems}) {
   const [menuActive, setMenuActive] = useState(false);
-  console.log(menuActive);
-  const menuItems = [
-    { value: "About us", href: "/" },
-    { value: "Services", href: "/" },
-    { value: "Use Cases", href: "/" },
-    { value: "Pricing", href: "/" },
-    { value: "Blog", href: "/" },
-  ];
+
   return (
     <>
       <hedaer className='header'>
