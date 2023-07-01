@@ -1,0 +1,62 @@
+@import "../../variables.scss";
+
+.team {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 45px;
+  border: 1px solid #191a23;
+  background: #fff;
+  box-shadow: 0px 5px 0px 0px #191a23;
+  padding: 40px 35px;
+  max-width: 512px;
+  transition: $transition-s;
+  &:hover {
+    transform: translateY(5px);
+    box-shadow: none;
+    transition: $transition-s;
+  }
+  // .team__content
+
+  &__content {
+    max-width: 317px;
+  }
+
+  // .team__img
+
+  &__img {
+    clip-path: url(../../assets/user1.png);
+  }
+
+  &__img-vector{
+
+  }
+
+  // .team__user-name
+
+  &__user-name {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  // .team__title
+
+  &__title {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  // .team__text
+
+  &__text {
+    margin: 28px 0px 0px 0px;
+    padding: 28px 0px 0px 0px;
+    border-top: 1px solid #000;
+  }
+
+  // .team__link
+
+  &__link {
+  }
+}

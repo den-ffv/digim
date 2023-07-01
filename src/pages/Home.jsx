@@ -18,6 +18,8 @@ import img4 from "../assets/web-img4.svg";
 import img5 from "../assets/web-img5.svg";
 import img6 from "../assets/web-img6.svg";
 import "./Home.scss"
+import Team from '../components/Team/Team';
+import Form from "../components/Form/Form";
 
 function Home() {
   const dropDownItems = [
@@ -28,7 +30,14 @@ function Home() {
     {id : 5, title: "Reporting and Communication" , text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda magnam recusandae eligendi non numquam reprehenderit, cupiditate sed eum doloremque vel?"},
     {id : 6, title: "Continual Improvement" , text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, soluta. Porro voluptate quos, quia dolore placeat quae commodi a sint consectetur beatae dicta. Provident perferendis, officiis illo quis dolores ipsum natus laborum cupiditate!"}
   ]
-
+  const teamItems =[
+    {id: 1 , userName: 'John Smith', title : 'CEO and Founder',text: '10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy', link: "bohdan-chokhlenko"},
+    {id: 2 , userName: 'Jane Doe', title : 'Director of Operations',text: '7+ years of experience in project management and team leadership. Strong organizational and communication skills', link: "bohdan-chokhlenko"},
+    {id: 3 , userName: 'Michael Brown', title : 'Senior SEO Specialistr',text: '5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization', link: "bohdan-chokhlenko"},
+    {id: 4 , userName: 'Emily Johnson', title : 'PPC Manager',text: '3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis', link: "bohdan-chokhlenko"},
+    {id: 5 , userName: 'Brian Williams', title : 'Social Media Specialist',text: '4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing metrics, and building engagement', link: "bohdan-chokhlenko"},
+    {id: 6 , userName: 'Sarah Kim', title : 'Content Creator',text: '2+ years of experience in writing and editing Skilled in creating compelling, SEO-optimized content for various industries', link: "bohdan-chokhlenko"},
+  ]
 
   return (
     <>
@@ -36,7 +45,6 @@ function Home() {
       <div className="section-info__content">
         <h1 className="section-info__title">Navigating the digital landscape for success</h1>
         <p className="section-info__text">
-    
           Our digital marketing agency helps businesses grow and succeed online
           through a range of services including SEO, PPC, social media
           marketing, and content creation.
@@ -72,9 +80,24 @@ function Home() {
           <DropDown key={dropDownItem.id} DropDownIndex={dropDownItem.id}  DropDownTitle={dropDownItem.title} DropDownText={dropDownItem.text}/>
         ))}
       </section>
+      <section className="section-team">
+        <Title title={"Team"} text={"Meet the skilled and experienced team behind our successful digital marketing strategies"}/>
+        <div className="section-team__content">
+          {teamItems.map((teamItem) => (
+            <Team key={teamItem.id} userName={teamItem.userName} title={teamItem.title}text={teamItem.text} link={teamItem.link}/>
+          ))}
+        </div>
+        <Button text={"See all team"} />
+      </section>
       <section className="section-testimonials">
         <Title title={"Testimonials"} text={"Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services"}/>
         <Slider/>
+      </section>
+      <section className="section-contact-us">
+        <Title title={"Contact Us"} text={"Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services"}/>
+          <div className="section-contact-us__form">
+          <Form/>
+          </div>
       </section>
     </>
 
