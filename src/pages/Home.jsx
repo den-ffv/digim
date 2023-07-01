@@ -2,7 +2,7 @@ import Button from "../components/Button/Button";
 import ServisCard from "../components/ServisCard/ServisCard";
 import Slider from "../components/Slider/Slider";
 import DropDown from "../components/DropDown/DropDown";
-import img from "../assets/illustration.svg";
+import image from "../assets/illustration.svg";
 import netflix from "../assets/sponsor/netflix.svg"
 import dribbble from "../assets/sponsor/dribbble.svg"
 import hubspot from "../assets/sponsor/hubspot.svg"
@@ -51,7 +51,7 @@ function Home() {
         </p>
         <Button text={"Book a consultation"} />
       </div>
-      <img className="section-info__img" src={img} alt='' />
+      <img className="section-info__img" src={image} alt='' />
     </section>
 
     <div className="sponsors">
