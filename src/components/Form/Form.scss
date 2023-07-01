@@ -1,0 +1,112 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 556px;
+  z-index: 5;
+
+  &__input-radio {
+    margin: 0px 0px 0px 30px;
+  }
+
+  &__text {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 25px 0px 0px 0px;
+  }
+
+  &__input {
+    width: 100%;
+    border-radius: 14px;
+    border: 1px solid #000;
+    background: #fff;
+    padding: 18px 30px;
+    color: #898989;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+  }
+  &__input-message {
+    width: 100%;
+    padding: 18px 30px 190px 30px ;
+    text-align: start;
+  }
+
+  &__button {
+    margin: 40px 0px 0px 0px;
+    padding: 20px 35px;
+    border-radius: 14px;
+    background: #191a23;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+}
+@media(max-width: 680px){
+  .form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    &__input-radio {
+    }
+  
+    &__text {
+      color: #000;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 28px;
+      margin: 15px 0px 0px 0px;
+    }
+  
+    &__input {
+      border-radius: 14px;
+      border: 1px solid #000;
+      background: #fff;
+      padding: 10px 20px;
+      color: #898989;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: normal;
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    &__input-message {
+      max-width: 300px;
+      padding: 10px 20px 110px 20px ;
+      text-align: start;
+    }
+  
+    &__button {
+      margin: 40px 0px 0px 0px;
+      padding: 10px 20px;
+      border-radius: 14px;
+      background: #191a23;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 28px;
+    }
+  }
+}
+@media(max-width: 425px){
+  .form {
+    max-width: 290px;
+    &__input-radio {
+    }
+  
+    &__text {
+      color: #000;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 28px;
+      margin: 15px 0px 0px 0px;
+    }
+  
+    &__input-message {
+      max-width: 290px;
+      min-width: 290px;
+
+    }
+  }
+}
