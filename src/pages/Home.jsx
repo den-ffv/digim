@@ -2,21 +2,21 @@ import Button from "../components/Button/Button";
 import ServisCard from "../components/ServisCard/ServisCard";
 import Slider from "../components/Slider/Slider";
 import DropDown from "../components/DropDown/DropDown";
-import image from "../assets/illustration.svg";
-import netflix from "../assets/sponsor/netflix.svg"
-import dribbble from "../assets/sponsor/dribbble.svg"
-import hubspot from "../assets/sponsor/hubspot.svg"
-import notion from "../assets/sponsor/notion.svg"
-import amazon from "../assets/sponsor/amazon.svg"
-import zoom from "../assets/sponsor/zoom.svg"
+import image from "../../public/assets/illustration.svg";
+import netflix from "../../public/assets/sponsor/netflix.svg"
+import dribbble from "../../public/assets/sponsor/dribbble.svg"
+import hubspot from "../../public/assets/sponsor/hubspot.svg"
+import notion from "../../public/assets/sponsor/notion.svg"
+import amazon from "../../public/assets/sponsor/amazon.svg"
+import zoom from "../../public/assets/sponsor/zoom.svg"
 import Title from "../components/Title/Title";
 
-import img1 from "../assets/web-img.svg";
-import img2 from "../assets/web-img2.svg";
-import img3 from "../assets/web-img3.svg";
-import img4 from "../assets/web-img4.svg";
-import img5 from "../assets/web-img5.svg";
-import img6 from "../assets/web-img6.svg";
+import img1 from "../../public/assets/web-img.svg";
+import img2 from "../../public/assets/web-img2.svg";
+import img3 from "../../public/assets/web-img3.svg";
+import img4 from "../../public/assets/web-img4.svg";
+import img5 from "../../public/assets/web-img5.svg";
+import img6 from "../../public/assets/web-img6.svg";
 import "./Home.scss"
 import Team from '../components/Team/Team';
 import Form from "../components/Form/Form";

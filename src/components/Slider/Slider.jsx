@@ -1,6 +1,6 @@
 import Сomment from "../Comentari/Сomment";
 import "./Slider.scss";
-import arrow from "../../assets/arrow.svg";
+import arrow from "../../../public/assets/arrow.svg";
 import { useState } from "react";
 function Slider() {
   const itemsComent = [

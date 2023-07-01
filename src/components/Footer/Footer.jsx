@@ -1,8 +1,8 @@
 import "./Footer.scss";
-import logo from "../../assets/DIGIM-logo.svg";
-import linkedin from "../../assets/linkedin.svg"
-import facebook from "../../assets/facebook.svg"
-import twitter from "../../assets/twitter.svg"
+import logo from "../../../public/assets/DIGIM-logo.svg";
+import linkedin from "../../../public/assets/linkedin.svg"
+import facebook from "../../../public/assets/facebook.svg"
+import twitter from "../../../public/assets/twitter.svg"
 
 function Footer({ menuItems }) {
   return (
