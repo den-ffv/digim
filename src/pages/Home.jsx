@@ -10,7 +10,6 @@ import notion from "../../public/assets/sponsor/notion.svg"
 import amazon from "../../public/assets/sponsor/amazon.svg"
 import zoom from "../../public/assets/sponsor/zoom.svg"
 import Title from "../components/Title/Title";
-
 import img1 from "../../public/assets/web-img.svg";
 import img2 from "../../public/assets/web-img2.svg";
 import img3 from "../../public/assets/web-img3.svg";
@@ -53,7 +52,6 @@ function Home() {
       </div>
       <img className="section-info__img" src={image} alt='' />
     </section>
-
     <div className="sponsors">
         <img src={amazon} alt="amazon" />
         <img src={dribbble} alt="dribbble" />
@@ -62,7 +60,6 @@ function Home() {
         <img src={netflix} alt="netflix" />
         <img src={zoom} alt="zoom" />
       </div>
-
       <section className="section-servis">
         <Title title={"Services"} text={"At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:"}/>
         <div className="section-servis__cards">
