@@ -52,7 +52,7 @@ function Home() {
         </p>
         <Button text={"Book a consultation"} />
       </div>
-      <img className="section-info__img" src={image} alt='' />
+      {/* <img className="section-info__img" src={image} alt='' /> */}
     </section>
     <div className="sponsors">
         <img src={amazon} alt="amazon" />
