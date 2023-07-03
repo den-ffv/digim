@@ -6,7 +6,7 @@ import Title from "../components/Title/Title";
 import Team from '../components/Team/Team';
 import Form from "../components/Form/Form";
 
-import image from "../image/illustration.svg";
+
 import netflix from "../image/sponsor/netflix.svg"
 import dribbble from "../image/sponsor/dribbble.svg"
 import hubspot from "../image/sponsor/hubspot.svg"
