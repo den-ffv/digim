@@ -1,5 +1,5 @@
 import "./Menu.scss";
-import logo from "../../../public/assets/DIGIM-logo.svg";
+import logo from "../../../public/DIGIM-logo.svg";
 function Menu({ active, menuItems, setAcvive }) {
   return (
     <div onClick={() => setAcvive(false)}>

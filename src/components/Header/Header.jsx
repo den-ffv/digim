@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../../../public/assets/DIGIM-logo.svg";
+import logo from "/DIGIM-logo.svg";
 import "./Header.scss";
 import Menu from "../Menu/Menu";
 function Header({menuItems}) {
