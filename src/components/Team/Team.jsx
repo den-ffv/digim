@@ -1,6 +1,6 @@
 import "./Team.scss";
-import linkedin from "../../../public/assets/linkedinIcon2.svg";
-import vector from "../../../public/assets/vector.svg";
+import linkedin from "../../assets/linkedinIcon2.svg";
+import vector from "../../assets/vector.svg";
 function Team({ img, userName, title, text, link }) {
   return (
     <div className='team'>

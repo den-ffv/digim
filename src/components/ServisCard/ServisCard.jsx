@@ -1,6 +1,6 @@
 import React from "react";
 import "./ServisCard.scss";
-import icon from "../../../public/assets/icon.svg";
+import icon from "../../assets/icon.svg";
 
 function ServisCard({firstTitle, secondTitle, backgroundColor, backgroundColorText, colorText, img, styleIcon}) {
   return (
