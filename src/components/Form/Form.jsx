@@ -1,6 +1,6 @@
 import React from "react";
 import "./Form.scss"
-import imgBG from "../../../public/bg.svg";
+import imgBG from "/bg.svg";
 function Form() {
   return (
     <>

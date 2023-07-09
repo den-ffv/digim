@@ -24,10 +24,14 @@
   // .team__img
 
   &__img {
+    width: 107px;
+    height: 107px;
+    border-radius: 20% 50% 50% 10%;
+    border-bottom: 4px solid #000;
+    border-right: 4px solid #000;
   }
 
-  &__img-vector{
-
+  &__img-vector {
   }
 
   // .team__user-name

@@ -10,8 +10,6 @@ function DropDown({ DropDownIndex, DropDownTitle, DropDownText}) {
       textContentElement.style.maxHeight = dropDownActiv ? `${textContentElement.scrollHeight}px` : '0';
     }
   }, [dropDownActiv, DropDownText]);
-
-  console.log(dropDownActiv)
   return (
     <div className={dropDownActiv ?'drop-down drop-down-active' :"drop-down"}onClick={() => setDropDownActiv(!dropDownActiv)}>
       <div className='drop-down__content'>
