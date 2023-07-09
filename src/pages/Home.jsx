@@ -33,12 +33,12 @@ function Home() {
   ]
   const teamItems =[
     
-    {id: 1 , personImage: 'JohnSmith.svg', userName: 'John Smith', title : 'CEO and Founder',text: '10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy', link: "bohdan-chokhlenko"},
-    {id: 2 , personImage: 'JaneDoe.svg', userName: 'Jane Doe', title : 'Director of Operations',text: '7+ years of experience in project management and team leadership. Strong organizational and communication skills', link: "bohdan-chokhlenko"},
-    {id: 3 , personImage: 'MichaelBrown.svg', userName: 'Michael Brown', title : 'Senior SEO Specialistr',text: '5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization', link: "bohdan-chokhlenko"},
-    {id: 4 , personImage: 'EmilyJohnson.svg', userName: 'Emily Johnson', title : 'PPC Manager',text: '3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis', link: "bohdan-chokhlenko"},
-    {id: 5 , personImage: 'BrianWilliams.svg', userName: 'Brian Williams', title : 'Social Media Specialist',text: '4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing metrics, and building engagement', link: "bohdan-chokhlenko"},
-    {id: 6 , personImage: 'SarahKim.svg', userName: 'Sarah Kim', title : 'Content Creator',text: '2+ years of experience in writing and editing Skilled in creating compelling, SEO-optimized content for various industries', link: "bohdan-chokhlenko"},
+    {id: 1 , userName: 'John Smith', title : 'CEO and Founder',text: '10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy', link: "bohdan-chokhlenko"},
+    {id: 2 , userName: 'Jane Doe', title : 'Director of Operations',text: '7+ years of experience in project management and team leadership. Strong organizational and communication skills', link: "bohdan-chokhlenko"},
+    {id: 3 , userName: 'Michael Brown', title : 'Senior SEO Specialistr',text: '5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization', link: "bohdan-chokhlenko"},
+    {id: 4 , userName: 'Emily Johnson', title : 'PPC Manager',text: '3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis', link: "bohdan-chokhlenko"},
+    {id: 5 , userName: 'Brian Williams', title : 'Social Media Specialist',text: '4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing metrics, and building engagement', link: "bohdan-chokhlenko"},
+    {id: 6 , userName: 'Sarah Kim', title : 'Content Creator',text: '2+ years of experience in writing and editing Skilled in creating compelling, SEO-optimized content for various industries', link: "bohdan-chokhlenko"},
   ]
 
   return (
@@ -84,7 +84,7 @@ function Home() {
         <Title title={"Team"} text={"Meet the skilled and experienced team behind our successful digital marketing strategies"}/>
         <div className="section-team__content">
           {teamItems.map((teamItem) => (
-            <Team key={teamItem.id} personImage={teamItem.personImage} userName={teamItem.userName} title={teamItem.title}text={teamItem.text} link={teamItem.link}/>
+            <Team key={teamItem.id} userName={teamItem.userName} title={teamItem.title}text={teamItem.text} link={teamItem.link}/>
           ))}
         </div>
         <Button text={"See all team"} />
